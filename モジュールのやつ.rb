@@ -302,7 +302,7 @@ def convert_heisei_to_date(heisei_text)
     
     if Date.valid_date?(year,month,day)
        Date.new(year,month,day)
-   end
+    end
 end
 
 p convert_heisei_to_date("平成12年4月23日")   
