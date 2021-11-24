@@ -46,7 +46,6 @@ class Main {
 
 class Main {
   public static void main(String[] args) {
-    // それぞれ年齢に関する引数を追加してください
     printData("Kate Jones", 27);
     printData("John Christopher Smith", 65);
   }
