@@ -32,3 +32,5 @@ class PracticeTest < Minites::Test
     refute = "prooo,", practice.name
   end
 end
+
+
