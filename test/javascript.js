@@ -235,3 +235,44 @@ $(function () {
     $('.main-img').eq(index).addClass('current-img');
   }, 3000);
 });
+
+// ratyの一部を真似て書き、書き方の幅を広げる
+          var execute = true;
+          var score   = (that.opt.half || that.opt.precision) ? that.self.data('score') : (this.alt || $(this).data('alt'));
+
+          if (that.opt.half && !that.opt.precision) {
+            score = that._roundHalfScore(score);
+          }
+
+          if (that.opt.click) {
+            execute = that.opt.click.call(that.element, +score, evt);
+          }
+
+          if (execute || execute === undefined) {
+            that._apply(+score);
+          }
+
+           for (var i = 1; i <= this.stars.length; i++) {
+          var icon;
+          var star   = this.stars[i - 1];
+          var turnOn = this._turnOn(i, score);
+
+          if (this.opt.iconRange && this.opt.iconRange.length > hash) {
+            var irange = this.opt.iconRange[hash];
+
+            icon = this._getRangeIcon(irange, turnOn);
+
+            if (i <= irange.range) {
+              this._setIcon(star, icon);
+            }
+
+            if (i === irange.range) {
+              hash++;
+            }
+          } else {
+            icon = this.opt[turnOn ? 'starOn' : 'starOff'];
+
+            this._setIcon(star, icon);
+          }
+        }
+      },
