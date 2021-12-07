@@ -759,3 +759,75 @@ import extend.phone.Phone;
 
 public class FlyingPhone implements Phone, Flying {
 }
+
+
+public class Human01 {
+    public String name; 
+    public int age;
+
+    public Human01() {
+        name = "山田";
+        age = 20;
+    }
+    public Human01(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+}
+
+package capsule.human;
+
+public class HumanNoCapsule {
+    public String name;
+    public int age;
+
+    public HumanNoCapsule(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+}
+・HumanCapsule.java
+
+package capsule.human;
+
+public class HumanCapsule {
+    private String name;
+    private int age;
+
+    public HumanCapsule(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return this.age;
+    }
+}
+
+
+package capsule;
+
+import capsule.human.HumanCapsule;
+import capsule.human.HumanNoCapsule;
+
+public class Capsule01 {
+    public static void main(String[] args) {
+        HumanNoCapsule human1 = new HumanNoCapsule("田中", 28);
+        human1.name = "今田";
+        human1.age = 70;
+        System.out.println("名前は" + human1.name + ", 年齢は" + human1.age + "です。");
+
+        HumanCapsule human2 = new HumanCapsule("小林", 32);
+        System.out.println("名前は" + human2.getName() + ", 年齢は" + human2.getAge() + "です。");
+        human2.setName("佐々木");
+        System.out.println("変更した名前は" + human2.getName() + "です。");
+    }
+}
