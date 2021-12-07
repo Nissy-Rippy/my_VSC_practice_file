@@ -831,3 +831,27 @@ public class Capsule01 {
         System.out.println("変更した名前は" + human2.getName() + "です。");
     }
 }
+
+package capsule.human;
+
+public class HumanCapsule {
+    private String name;
+    private int age;
+
+    public HumanCapsule(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return this.age;
+    }
+}
