@@ -45,3 +45,19 @@ z = 55
 # 変数 z が 77 ではない場合に「 zは77ではありません 」と出力してください
 if not z == 77:
   print('zは77ではありません')
+
+
+  apple_price = 200
+apple_count = 8
+
+# apple_priceとapple_countを掛けた結果を、変数total_priceに代入してください
+total_price = apple_price * apple_count
+
+# total_priceの値を出力してください
+print (total_price)
+
+my_name = "にんじゃわんこ"
+
+# my_nameを用いて、「私はにんじゃわんこです」となるように変数と文字列を連結して出力してください
+print ("私は" + my_name + "です")
+
