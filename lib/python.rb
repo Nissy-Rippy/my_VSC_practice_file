@@ -61,3 +61,19 @@ my_name = "にんじゃわんこ"
 # my_nameを用いて、「私はにんじゃわんこです」となるように変数と文字列を連結して出力してください
 print ("私は" + my_name + "です")
 
+age = 24
+# ageを用いて「私は24歳です」と出力してください
+print ("私は" + str(age) + "歳です")
+
+count = '5'
+# countに1を足した値を出力してください
+print ( int(count) + 1)
+
+money = 100
+apple_price = 200
+
+if money >= apple_price:
+    print('りんごを買うことができます')
+# if 文の条件に当てはまらない場合に「 お金が足りません 」と出力してください
+else :
+  print('お金が足りません')
