@@ -135,6 +135,77 @@
         break;
       }
       echo $i.'<br>';
+
+      for ($i = 1; $i < 1000; $i++) {
+  if($i % 3 == 0) {
+    continue;
+  }
+  echo $i.'<br>';
+}
+      <?php
+
+    // 関数helloを定義してください
+   function hello () {
+     echo 'Hello, world!';
+   }
+    
+    // 関数helloを呼び出してください
+    
+    echo hello();
+    echo '<br>';
+    // 関数printRectangleAreaを定義してください
+    
+    function printRectangleArea($height,$width){
+      echo $height * $width;
+    }
+    // 引数を(5, 10)としてprintRectangleAreaを呼び出してください
+    echo printRectangleArea(5,10);
+    
+  ?>
+
+
+    for($i = 51; $i <= 100; $i ++){
+    echo $i.'<br>';
+       }
+  ?>
+
+     $i = 2;
+    while($i <= 100){
+      echo $i.'<br>';
+      $i += 2;
+    }
+    for ($i = 1; $i <= 1000; $i++) {
+      if($i > 500){
+        break;
+      }
+      echo $i.'<br>';
+
+      for ($i = 1; $i < 1000; $i++) {
+  if($i % 3 == 0) {
+    continue;
+  }
+  echo $i.'<br>';
+}
+      <?php
+
+    // 関数helloを定義してください
+   function hello () {
+     echo 'Hello, world!';
+   }
+    
+    // 関数helloを呼び出してください
+    
+    echo hello();
+    echo '<br>';
+    // 関数printRectangleAreaを定義してください
+    
+    function printRectangleArea($height,$width){
+      echo $height * $width;
+    }
+    // 引数を(5, 10)としてprintRectangleAreaを呼び出してください
+    echo printRectangleArea(5,10);
+    
+  ?>
 </body>
 </body>
 </html>
