@@ -248,8 +248,55 @@
           }
           ?>
         </select>
-    
+            $curry = new Menu();
+        $pasta = new Menu();
+        // $curryのnameプロパティに'CURRY'を代入してください
+        $curry -> name = "CURRY";
+
+        // $pastaのnameプロパティに'PASTA'を代入してください
+        $pasta -> name = "PASTA";
+
+        // $curryのnameプロパティをechoしてください
+        echo $curry -> name;
+
+        echo '<br>';
+        // $pastaのnameプロパティをechoしてください
+        echo $pasta -> name;
+
   ?>
 </body>
 </body>
 </html>
+
+
+
+<?php
+class Menu {
+  public $name;
+  
+  public function hello(){
+    echo "私はMenuクラスのインスタンスです";
+    echo "私は".$this -> name."です";
+
+  }
+  
+}
+
+$curry = new Menu();
+$pasta = new Menu();
+$curry->name = 'CURRY';
+$pasta->name = 'PASTA';
+echo $curry -> hello();
+
+echo '<br>';
+echo $pasta -> hello();
+
+?>
+
+ <div class="menu-wrapper container">
+    <h1 class="logo">Café Progate</h1>
+    <div class="menu-items">
+      <?php foreach ($menus as $menu): ?>
+      <h3><?php echo $menu -> name ?>"</h3>
+      <?php endforeach ?>
+      
