@@ -1,4 +1,4 @@
-<?php 
+<?php
 require_once('menu.php');
 
 class Food extends Menu {
@@ -12,7 +12,8 @@ class Food extends Menu {
   public function getSpiciness() {
     return $this->spiciness;
   }
-  
 }
+
+
 
 ?>
