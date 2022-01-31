@@ -134,3 +134,51 @@ class Person {
     return bmi >= 18.5 && bmi < 25.0;
   }
 }
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+
+    System.out.print("名前： ");
+
+    // 変数nameを定義し、コンソールから文字列を受け取って代入してください
+    String name = scanner.next();
+
+    // 「こんにちは◯◯さん」と出力してください
+    System.out.println("こんにちは" + name + "さん");
+  }
+}
+
+
+
+
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+    System.out.print("名前：");
+    String firstName = scanner.next();
+    System.out.print("名字: ");
+    String lastName = scanner.next();
+    System.out.print("年齢：");
+    int age = scanner.nextInt();
+    System.out.print("身長(m)：");
+    double height = scanner.nextDouble();
+    System.out.print("体重(kg)：");
+    double weight = scanner.nextDouble();
+
+    System.out.println("名前は" + firstName + " " + lastName + "です");
+    System.out.println("年齢は" + age + "歳です");
+
+    if (age >= 20) {
+      System.out.println("成年者です");
+    } else {
+      System.out.println("未成年者です");
+    }
+    System.out.println("身長" + height + "mです");
+    System.out.println("体重は" + weight + "kgです");
+  }
+
+}
